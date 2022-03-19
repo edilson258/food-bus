@@ -1,3 +1,4 @@
+/* Background Silder   */
 const background = document.querySelector('.header-wrap');
 const image = new Image();
 
@@ -17,3 +18,5 @@ const changeBackground = () => {
 }
 
 setInterval(changeBackground, 5000);
+
+

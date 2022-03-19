@@ -1,0 +1,56 @@
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  overflow-y: hidden;
+  height: 170px;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+.nav-scroller .nav {
+  height: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-link {
+  height: 180px;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+
+.nav-link img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* dailynRank */
+
+.daily-rank {
+  padding-top: 2rem;
+}
+
+.daily-rank h3{
+  color: #112;
+  font-weight: bold;
+  margin-left: 10px;
+}
