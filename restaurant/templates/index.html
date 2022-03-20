@@ -1,76 +1,342 @@
 {% load static %}
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="stylesheet" href="{% static './css/homestyle.css' %}" />
-    <link rel="stylesheet" href="{% static './css/bootstrap.min.css' %}" />
-    <link rel="stylesheet" href="{% static './css/offcanvas.css' %}" />
-    <title>Restaurant</title>
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- Header section -->
+  <title>Indian Restaurant</title>
+  <meta content="Indian Food" name="keywords">
+  <meta content="Indian Restaurant" name="description">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
-    <section>
-      <div class="header-wrap">
-        <div class="gradient-vertical">
-          <div class="gradient-horizontal">
-            <div class="header">
-              <div class="header-navbar">
-                <span>Menu</span>
-                <span>About</span>
-                <span>Contact</span>
-              </div>
-              <div class="order-button">
-                <button>Order Now</button> 
-              </div>
-              <h1>Restaurant of India</h1>
-            </div>            
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'lib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/magnific-popup/magnific-popup.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/hover/hover.min.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <!-- Responsive css -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.png">
+
+</head>
+
+<body>
+
+  <!-- start section navbar -->
+  <nav id="main-nav">
+    <div class="row">
+      <div class="container">
+
+        <div class="logo">
+          <img src="{% static 'img/restaurant-logo-black-spoon-fork-knife-vector-isolated-white-background-eps-restaurant-logo-black-spoon-fork-197383068.jpg' %}" alt="logo">
+        </div>
+
+        <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
+
+        <ul class="nav-menu list-unstyled">
+          <li><a href="#header" class="smoothScroll">Home</a></li>
+          <li><a href="#about" class="smoothScroll">About</a></li>
+          <li><a href="#portfolio" class="smoothScroll">Menu</a></li>
+          <li><a href="#contact" class="smoothScroll">Contact</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- End section navbar -->
+
+
+  <!-- start section header -->
+  <div id="header" class="home">
+
+    <div class="container">
+      <div class="header-content">
+        <h1>We are <span class="typed"></span></h1>
+        <div class="header-content-text"> 
+          <p>voluptatem accusantium doloremque laudantium, totam rem aperiam. </p>
+        </div>
+
+        <ul class="list-unstyled list-social">
+          <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+          <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+          <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+          <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
+          <li><a href="#"><i class="ion-social-pinterest"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End section header -->
+
+
+  <!-- start section about us -->
+  <div id="about" class="paddsection">
+    <div class="container">
+      <div class="row justify-content-between">
+
+        <div class="col-lg-4 ">
+          <div class="div-img-bg">
+            <div class="about-img">
+              <img src="{% static 'img/dan-gold-E6HjQaB7UEA-unsplash.jpg' %}" class="img-responsive" alt="me">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="about-descr">
+
+            <p class="p-heading">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete. </p>
+            <p class="separator">Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end section about us -->
+
+
+  <!-- start section services -->
+  <div id="services">
+    <div class="container">
+
+        <div class="services-carousel owl-theme">
+
+          <div class="services-block">
+
+            <i class="ion-android-bar"></i>
+            <span>Lorem Ipsum</span>
+            <p class="separator">accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum, culpa qui officia deserunt mollitia animi.</p>
+
+          </div>
+          
+          <div class="services-block">
+
+            <i class="ion-android-favorite"></i>
+            <span>Lorem Ipsum</span>
+            <p class="separator">accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum, culpa qui officia deserunt mollitia animi.</p>
+
+          </div>
+          
+          <div class="services-block">
+
+            <i class="ion-android-restaurant"></i>
+            <span>Lorem Ipsum</span>
+            <p class="separator">accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum, culpa qui officia deserunt mollitia animi.</p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-coffee"></i>
+            <span>Lorem Ipsum</span>
+            <p class="separator">accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum, culpa qui officia deserunt mollitia animi.</p>
+
+          </div>
+
+
+
+          <div class="services-block">
+
+            <i class="ion-ribbon-b"></i>
+            <span>Lorem Ipsum</span>
+            <p class="separator">accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum, culpa qui officia deserunt mollitia animi.</p>
+
+          </div>
+
+        </div>
+
+    </div>
+
+  </div>
+  <!-- end section services -->
+
+
+  <!-- start section portfolio -->
+  <div id="portfolio" class="text-center paddsection">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Daily Menu</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="portfolio-list">
+
+            <ul class="nav list-unstyled" id="portfolio-flters">
+              <li class="filter filter-active" data-filter=".all">all</li>
+              <li class="filter" data-filter=".branding">branding</li>
+              <li class="filter" data-filter=".mockups">breakfast</li>
+              <li class="filter" data-filter=".uikits">dinner</li>
+              <li class="filter" data-filter=".webdesign">lanch</li>
+              <li class="filter" data-filter=".photography">photography</li>
+            </ul>
+
+          </div>
+
+          <div class="portfolio-container">
+            
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
+              <a class="popup-img" href="{% static 'img/delicious-vietnamese-food-including-pho-ga-noodles-spring-rolls-white-table_181624-34062.webp' %}">
+                <img src="{% static 'img/delicious-vietnamese-food-including-pho-ga-noodles-spring-rolls-white-table_181624-34062.webp' %}" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all uikits webdesign">
+              <a class="popup-img" href="{% static 'img/jason-leung-poI7DelFiVA-unsplash.jpg' %}">
+                <img src="{% static 'img/jason-leung-poI7DelFiVA-unsplash.jpg' %}" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits photography">
+              <a class="popup-img" href="{% static 'img/jay-wennington-N_Y88TWmGwA-unsplash.jpg' %}">
+                <img src="{% static 'img/jay-wennington-N_Y88TWmGwA-unsplash.jpg' %}"  alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding webdesig photographyn">
+              <a class="popup-img" href="{% static 'img/mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg' %}">
+                <img src="{% static 'img/mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg' %}" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups webdesign photography">
+              <a class="popup-img" href="{% static 'img/nick-karvounis-Ciqxn7FE4vE-unsplash.jpg' %}">
+                <img src="{% static 'img/nick-karvounis-Ciqxn7FE4vE-unsplash.jpg' %}" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits photography">
+              <a class="popup-img" href="{% static 'img/big-hamburger-with-double-beef-french-fries_252907-8.webp' %}">
+                <img src="{% static 'img/big-hamburger-with-double-beef-french-fries_252907-8.webp' %}" alt="img">
+              </a>
+            </div>
+
+
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- Featured Menu items -->
+  </div>
+  <!-- End section portfolio -->
 
-    <section>
-      <div class="daily-rank">
-        <h3>Daily Meals</h3>
-        <div class="nav-scroller">
-          <nav class="nav nav-underline">
 
-            <div class="nav-link" href="#">
-              <img src="http://127.0.0.1:5000/dan-gold-E6HjQaB7UEA-unsplash.jpg" />
-            </div>
-            <div class="nav-link" href="#">
-              <img src="http://127.0.0.1:5000/dan-gold-E6HjQaB7UEA-unsplash.jpg" />
-            </div>
 
-            <div class="nav-link" href="#">
-              <img src="http://127.0.0.1:5000/dan-gold-E6HjQaB7UEA-unsplash.jpg" />
-            </div>
-            <div class="nav-link" href="#">
-              <img src="http://127.0.0.1:5000/dan-gold-E6HjQaB7UEA-unsplash.jpg" />
-            </div>
+  <!-- start sectoion contact -->
+  <div id="contact" class="paddsection">
+    <div class="container">
+      <div class="contact-block1">
+        <div class="row">
 
-            <div class="nav-link" href="#">
-              <img src="http://127.0.0.1:5000/dan-gold-E6HjQaB7UEA-unsplash.jpg" />
-            </div>
-            <div class="nav-link" href="#">
-              <img src="http://127.0.0.1:5000/dan-gold-E6HjQaB7UEA-unsplash.jpg" />
-            </div>
+          <div class="col-lg-6">
+            <div class="contact-contact">
 
-          </nav>
+              <h2 class="mb-30">Contact Us</h2>
+
+              <ul class="contact-details">
+                <li><span>Bhayana Market</span></li>
+                <li><span>Delhi, India</span></li>
+                <li><span>+999 999 999 99</span></li>
+                <li><span>example@example.com</span></li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="row">
+
+                <div id="sendmessage">A tua mensagem foi enviada. Obrigada!</div>
+                <div id="errormessage"></div>
+
+                <div class="col-lg-6">
+                  <div class="form-group contact-block1">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Your Message"></textarea>
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <input type="submit" class="btn btn-defeault btn-send" value="Send Message">
+                </div>
+
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+  <!-- start sectoion contact -->
 
-    <script src="{% static 'js/homescript.js' %}" ></script>
-  </body>
+
+  <!-- start section footer -->
+  <div id="footer" class="text-center">
+    <div class="container">
+
+      <p>&copy; Copyrights PATEGUANA. All rights reserved.</p>
+
+      <div class="credits">
+        Designed by <strong>Edilson Pateguana</strong>
+      </div>
+
+    </div>
+  </div>
+  <!-- End section footer -->
+
+  <!-- JavaScript Libraries -->
+  <script src="{% static 'lib/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'lib/jquery/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'lib/typed/typed.js' %}"></script>
+  <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'lib/magnific-popup/magnific-popup.min.js' %}"></script>
+  <script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="{% static 'contactform/contactform.js' %}"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
 </html>
